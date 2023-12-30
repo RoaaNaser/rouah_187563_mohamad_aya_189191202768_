@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Favorites</title>
+
+    <style>
+        .secF:hover {
+            padding: 10px;
+            border: 1px solid var(--text-colr);
+            transition: 0.4s;
+        }
+        .secF{
+            position: relative;
+        }
+        .shadowSF{
+            box-shadow: 0 0 20px rgb(123, 123, 121);
+        }
+        .shooItem{
+            box-shadow: 0 0 3px rgb(46, 45, 45);
+        }
+    </style>
+</head>
+
+<!--Wishlist page-->
+<body>
+    
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top shadowSF" style="background-color:rgb(225, 224, 222);">
+        <div class="container p-2">
+            <h3 class=" text-danger" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                Electronic Books</h3>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="d-grid gap-3 d-md-flex justify-content-md-end ms-auto">
+                    <a href="index.html" class="btn text-danger p-3 shooItem" style="background-color: whitesmoke; ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <section class="py-5" id="features">
+        <div class="container-fluid">
+            <h2 class="text-center mb-4" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-top: 85px;"> List  <span class="text-danger">Favorites</span> </h2>
+            <div class="row-cols-md-2 row-cols-lg-3 row row-cols-1 g-4 m-4 ">
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book1.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">The Art Reading Minds Book</h6>
+                            <p>$45</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-heart-fill text-danger"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book2.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">Book Perfect Room for a Sick Man</h6>
+                            <p>$50</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book3.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">The Book of Man Burning</h6>
+                            <p>$40</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book4.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">The Book of Mental Health Thieves</h6>
+                            <p>$55</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book5.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">Book Babe Books</h6>
+                            <p>$45</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book6.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">Book of rare cases</h6>
+                            <p>$35</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book7.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">The Book of Taste of Death</h6>
+                            <p>$40</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book8.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">The Book of Invention of Solitude</h6>
+                            <p>$35</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book9.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">Book of Alioun</h6>
+                            <p>$52</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book10.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">A book that no one helped
+                            me God did that</h6>
+                            <p>$42</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book11.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">The Book of Sorrow Letters</h6>
+                            <p>$38</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <!-- border: none !important هاد الكود لنقيم تحديد الاطار من الصور -->
+                    <div class="card  text-dark mb-2 shadowSF" style="border: none !important;">
+                        <div class="card-body">
+                            <img src="./imges/Book12.jpg" alt="" style="height: 40%; width: 100%" class="secF">
+                            <h6 class="card-text text-left mt-2">Book of the Pit</h6>
+                            <p>$47</p>
+                            <a href="#" class="btn btn-light float-end shooItem">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill text-danger" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-light float-end shooItem mx-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-trash-fill"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+</body>
+</html>
